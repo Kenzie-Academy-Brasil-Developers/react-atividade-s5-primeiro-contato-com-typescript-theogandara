@@ -58,15 +58,17 @@ function App() {
           <span>Ainda não temos usuários cadastrados</span>
         )}
 
-        {users.length !== 0 &&
-          users.map((user) => (
-            <Card
-              age={user.age}
-              key={user.name}
-              name={user.name}
-              hobby={user.hobby}
-            />
-          ))}
+        <div className="seguraCard">
+          {users.length !== 0 &&
+            users.map((user) => (
+              <Card
+                age={user.age}
+                key={user.name}
+                name={user.name}
+                hobby={user.hobby}
+              />
+            ))}
+        </div>
       </header>
     </div>
   );

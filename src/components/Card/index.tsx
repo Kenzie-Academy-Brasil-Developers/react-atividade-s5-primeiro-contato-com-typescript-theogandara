@@ -6,7 +6,7 @@ interface CardProps {
 
 const Card = ({ name, age, hobby }: CardProps) => {
   return (
-    <div >
+    <div className= "Card">
       <div> {name}</div>
       <div> {hobby}</div>
       <div> {age}</div>
